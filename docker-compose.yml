@@ -1,0 +1,15 @@
+# Docker Compose YAML file for Swagger Editor
+
+# build with:
+# $ sudo docker-compose build
+
+# start with:
+# $ sudo docker-compose up
+
+# after start, enter shell with:
+# $ sudo docker exec -it swaggereditordocker_swaggereditor_1 bash
+
+swaggereditor:
+    build: .
+    ports:
+        - "8080:8080" # for testing purposes, (un)comment as required
